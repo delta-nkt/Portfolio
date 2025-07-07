@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7cb88774bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header or home -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#header">
+                            <div class="icon-box">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <div class="icon-box">
+                                <i class="fas fa-user"></i>
+                                <span>About</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            <div class="icon-box">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Work</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contactinfo">
+                            <div class="icon-box">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="images\actual3-removebg-preview.png" class="logo">
+            <button class="button-57" role="button" onclick="redirectTo('https://drive.google.com/file/d/1cy9dhr6aC_iySk-ilQIXuFDZHoRKJ6DW/view?usp=drive_link')"><span class="text">Download resume</span><span>Thanks !!</span></button>
+            <img src="images/new.jpg" class="mainpic">
+            
+            <div class="header-text">
+                
+                <h1>Hi, I'm <i>NIKIT</i></h1><br>
+                <p><font face="cursive" color="white">and I'm <span class="inh"> </span><br> </font></p>
+                
+            </div>
+            
+           
+        </div>
+        
+        <div class="chatbot-container">
+            <div class="chat-icon" onclick="toggleChat()">💬</div>
+            <div class="chat-box">
+                <div class="chat-header">Chatbot <span class="close-chat" onclick="toggleChat()">&times;</span></div>
+                <div class="chat-body" id="chatBody">
+                    <div class="bot-message message">Hello! How can I help you?</div>
+                    <div class="bot-message message" onclick="askQuestion(this)">Tell me about your experience.</div>
+                    <div class="bot-message message" onclick="askQuestion(this)">What skills do you have?</div>
+                    <div class="bot-message message" onclick="askQuestion(this)">How can I contact you?</div>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" id="userInput" class="chat-input" placeholder="Type a message...">
+                    <button class="send-btn" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------- about section ---------------------------------------------->
+
+    <section class="modern-about-new-section" id="about">
+        <div class="modern-about-new-container">
+            <div class="modern-about-new-row">
+                <div class="modern-about-new-col-1">
+                    <img src="./images/picpo.jpg" alt="Profile" class="modern-about-new-profile-img">
+                </div>
+                <div class="modern-about-new-col-2">
+                    <h2 class="modern-about-new-sub-title">About Me</h2>
+                    <p class="modern-about-new-description">
+                        I am a passionate and dedicated Software Developer eager to take on new challenges and grow in the tech industry. With experience in .NET Core, React.js, PostgreSQL, and Spring Boot, I have worked on API development, database optimization, and UI/UX design, contributing to impactful projects. My hands-on learning in system design, API security, and microservices has strengthened my problem-solving skills. I thrive in collaborative environments, love exploring new technologies, and am committed to continuous learning and hard work to achieve goals. I’m actively seeking opportunities where I can contribute, learn, and make a difference. 
+                    </p>
+                    
+                    <div class="modern-about-new-tab-titles">
+                        <p class="modern-about-new-tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="modern-about-new-tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="modern-about-new-tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="modern-about-new-tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span> Java, Python, C++, C#, JavaScript</li>
+                            <li><span>Frontend:</span> HTML, CSS, Bootstrap, Tailwind, JavaScript, React JS</li>
+                            <li><span>Backend:</span> Node.js, Express.js, .NET Core, Docker, Springboot</li>
+                            <li><span>Database:</span> SQL, MongoDB, PostgreSQL, Redis</li>
+                            <li><span>Tools:</span> VS Code, Visual Studio, JMeter, PgAdmin, Git, Github desktop, Docker Desktop</li>
+                            <li><span>Core Subjects:</span> DataBase Management System, Operating System, Computer Networks</li>
+                        </ul>
+                    </div>
+    
+                    <div class="modern-about-new-tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>National Informatics Centre(NIC)</b></span><br><p>Software Developer</p>May 2024 - present<br><br>Software Developer Intern<br>February 2024 - May 2024</li>
+                        <li><span><b>Basel Practitioners PVT. LTD.</b></span><br>Technical Developer Intern<br>December 2022 - March 2023</li>
+                        <li><span><b>Prepbytes</b></span><br>Campus Business Manager <br>December 2021 - October 2022</li>
+                        <li><span><b>Bytemonk GTC</b></span><br>Treasurer</li>
+                        </ul>
+                    </div>
+    
+                    <div class="modern-about-new-tab-contents" id="education">
+                        <ul>
+                            <li><span><b>Bachelor's in Computer Science (MAKAUT)</b></span><br><p>Govt. College Of Engineering and Ceramic Technology</p>CGPA - 9.79<br></li>
+                            <li><span><b>Higher Secondary Education (WBCHSE)</b></span><br><p>Shree Jain Vidyalaya</p>Marks - 79.4%<br></li>
+                            <li><span><b>Secondary Education (WBBSE)</b></span><br><p>Shree Jain Vidyalaya</p>Marks - 84%<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!---------------------------- service section ------------------------------------------------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 id="service-sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Language</h2>
+                <p><b>Java, Python, C#, C++</b></p>
+                <a href="#" class="learn-more" data-project="language">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>Frontend Works</h2>
+                <p class="service-colour">
+                    <ul>
+                        <li><span><b>TodoList</b></span></li>
+                        <li><span><b>Github Profile Hunt</b></span></li>
+                        <li><span><b>Foodie</b></span></li>
+                        <li><span><b>Portfolio Website</b></span></li>
+                    </ul>
+                </p>
+                <a href="#" class="learn-more" data-project="frontend">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2>Backend Works</h2>
+                <p>
+                    <ul>
+                        <li><span><b>VoterCrud</b></span></li>
+                        <li><span><b>QR-Generator</b></span></li>
+                        <li><span><b>TodoManager</b></span></li>
+                    </ul>
+                </p>
+                <a href="#" class="learn-more" data-project="backend">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2>Full Stack Works</h2>
+                <p></p>
+                <a href="#" class="learn-more" data-project="fullstack">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-table"></i>
+                <h2>Data Visualization</h2>
+                <p>
+                    <ul>
+                        <li><span><b>Diabetes Visualization</b></span></li>
+                    </ul>
+                </p>
+                <a href="#" class="learn-more" data-project="datavisualization">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-file"></i>
+                <h2>Machine Learning</h2>
+                <p>
+                    <ul>
+                        <li><span><b>Model Comparison of RNA sequences</b></span></li>
+                    </ul>
+                </p>
+                <a href="#" class="learn-more" data-project="machinelearning">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Games</h2>
+                <p>
+                    <ul>
+                        <li><span><b>Rock Paper and Scissors</b></span></li>
+                        <li><span><b>Story teller</b></span></li>
+                    </ul>
+                </p>
+                <a href="#" class="learn-more" data-project="games">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Popup -->
+<div id="popup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+    </div>
+</div>
+<!-- -----------------------MY PORTFOLIO------------------------------------------------------------ -->
+
+<!-- Modern Portfolio Section -->
+<div id="modern-portfolio">
+    <div class="modern-container">
+        <h1 class="modern-sub-title">My Work</h1>
+        <div class="modern-work-list">
+            
+            <div class="modern-work">
+                <img src="images/music.jpg" alt="Music App">
+                <div class="overlay">
+                    <h3>Music App</h3>
+                    <p>A simple HTML5 audio player with JavaScript controls for play, pause, stop, volume adjustment, and real-time playback time display, utilizing the HTML5 Audio API for seamless audio management</p>
+                </div>
+            </div>
+
+            <div class="modern-work">
+                <img src="images/todo.png" alt="To-Do App">
+                <div class="overlay">
+                    <h3>To-Do List</h3>
+                    <p>Implemented React Hooks like useState and useEffect, using Context API for efficient state management</p>
+                </div>
+            </div>
+
+            <div class="modern-work">
+                <img src="images/rockpaperscissor.png" alt="rock game">
+                <div class="overlay">
+                    <h3>Rock-Paper-Scissors</h3>
+                    <p>A simple Rock-Paper-Scissors game using Python's Tkinter library, featuring a graphical user interface and interactive UI</p>
+                </div>
+            </div>
+
+            <div class="modern-work">
+                <img src="images/blog.webp" alt="Blog Platform">
+                <div class="overlay">
+                    <h3>Food Blog</h3>
+                    <p>Experience delicious flavors with beautifully crafted Food Blog Landing Page, built using React, MUI, and modern UI components</p>
+                </div>
+            </div>
+            <div class="modern-work">
+                <img src="images/microservice.webp" alt="micro-sample">
+                <div class="overlay">
+                    <h3>Sample-Micro</h3>
+                    <p>A microservice Based project in Springboot , services running in containers with service discovery and logger.</p>
+                </div>
+            </div>
+            <div class="modern-work">
+                <img src="images/VoterCrud.webp" alt="micro-sample">
+                <div class="overlay">
+                    <h3>VoterCrud</h3>
+                    <p>A voter registration, updation, removal function with checks on the ages and used EFCore, PostgresSQL also having checks for XSS attack using HTML sanitizer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modern Work Experience Section -->
+<!-- Modern Work Experience Section -->
+<div id="modern-work-experience">
+    <div class="modern-work-container">
+        <h1 class="modern-work-title">More Working Experience</h1>
+
+        <!-- Tab Navigation -->
+        <div class="modern-work-tabs">
+            <button class="modern-tab-button active" data-tab="modern-software">Software Developer</button>
+            <button class="modern-tab-button" data-tab="modern-internship">Internships</button>
+            <button class="modern-tab-button" data-tab="modern-personal">Personal Projects</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="modern-tab-content" id="modern-software">
+            <div class="modern-tab-content-header"><b>Software Developer Learnings</b></div>
+            <p>As a Software Developer at NIC, I had the privilege of working on a project built from scratch by our team, where we successfully met deadlines and development milestones while ensuring a smooth and structured development process. A key aspect of my role was figuring out complex logic, handling client issues, and addressing development challenges effectively. Thanks to the guidance of my mentors and the collaborative efforts of my team, I was able to navigate through various development hurdles and contribute meaningfully to the project. The supportive work environment and knowledge-sharing culture played a crucial role in enhancing my problem-solving abilities, debugging skills, and approach toward efficient software development.<br> 
+
+                On the technical side, this experience allowed me to explore web development in depth, focusing on service-based layered architecture, REST API best practices, and query optimization. I worked extensively on API performance enhancement, tackling real-life database-related challenges and solving **complex problems using both raw SQL queries and LINQ queries in .NET Core. Being involved in multiple projects provided me with an opportunity to broaden my perspective on software development, introducing me to key concepts like system design, database architecture, context segregation, API security, and handling different payload formats (JSON, XML, etc.). Additionally, I gained hands-on experience working with SFTP for secure file transfers, creating common utility functions, and writing optimized PostgreSQL functions. A huge credit goes to my mentors and teammates, who encouraged me to think critically, experiment with new solutions, and follow industry best practices, making this journey an incredibly enriching and rewarding experience. 🚀</p>
+        </div>
+        <div class="modern-tab-content" id="modern-internship" style="display: none;">
+            <div class="modern-tab-content-header"><b>Internship Learnings</b></div>
+            <p>During my internship at Basel Practitioners Pvt. Ltd., I had the opportunity to work in a highly collaborative and innovative environment. The company emphasized attention to detail and user-centric design, which helped me refine my UI/UX skills. Using Figma, I contributed to designing the report module, creating layouts for viewing, updating, and inserting reports with validations. I implemented tabular representations using Material UI, ensuring a structured and user-friendly interface. Additionally, I worked with DBeaver for database management and collaborated on React.js and Spring Boot projects. The company maintained high coding standards and rigorous UI testing, allowing me to understand usability, responsiveness, and debugging UI-related issues effectively. The supportive team and structured approach to problem-solving made it a great learning experience.<br><br>
+
+                At National Informatics Centre (NIC), I worked in a fast-paced, research-driven environment where I learned to develop scalable and efficient applications. The organization provided exposure to cutting-edge technologies, enabling me to work on microservice-based architecture using Spring Boot, Docker, and Eureka Service Discovery. Later, I built a CRUD application using .NET Core, following a layered architecture with common services and repositories, and implemented Entity Framework Core with PostgreSQL. NIC offered a real-world software development experience, and I also had the chance to work on a live project from scratch, where meeting tight deadlines, solving complex issues, and delivering two modules strengthened my problem-solving, teamwork, and project management skills. The work culture encouraged innovation, adaptability, and a solution-oriented mindset, making it an enriching experience. 🚀</p>
+        </div>
+        <div class="modern-tab-content" id="modern-personal" style="display: none;">
+            <div class="modern-tab-content-header"><b>Personal Projects Learnings</b></div>
+            <p>Through these projects, I have gained hands-on experience in web development, UI design, backend development, and Python GUI applications. I learned DOM manipulation, event handling, and game logic in JavaScript while building interactive projects like the Dice Game and Simon Game. Working with React.js, I explored state management (useState), side effects (useEffect), Context API, and routing while developing applications like the To-Do List, GitHub Profile Hunt, Theme Switcher, and Password Generator. Using Material UI (MUI) in the Foodie landing page improved my understanding of responsive design and component-based architecture.<br> 
+
+                In backend development, I built a QR Code Generator using Node.js and Express.js, where I worked with the file system module to generate and store QR codes. This project helped me understand server-side logic, handling requests, and working with file systems efficiently. In Python, I developed GUI-based applications with Tkinter, learning how to handle user interactions, display dynamic content, and structure logic-driven applications in projects like the Storytelling App and Rock Paper Scissors. Additionally, integrating the GitHub API in one project helped me understand fetching and handling external data and working with APIs effectively.<br>
+                
+                Beyond technical skills, these projects have also improved my problem-solving abilities, adaptability, and time management. Debugging and troubleshooting issues have enhanced my logical thinking and persistence, while working with different technologies has made me more adaptable to new frameworks and tools.<br>
+                
+                Managing multiple projects taught me prioritization and efficiency, and designing user-friendly interfaces improved my creativity and UI/UX thinking. Understanding documentation and structuring projects effectively strengthened my communication and collaboration skills. Most importantly, these experiences have instilled patience and resilience, helping me stay motivated while overcoming challenges. 🚀</p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Achievements Section -->
+<div id="achievements-section">
+    <div class="achievements-container">
+        <h1 class="achievements-title">Achievements</h1>
+        <ul class="achievements-list">
+            <li class="achievement-item">
+                <span class="achievement-heading"><b>TCS iON Career Edge-Young Professional</b></span>
+                <p class="achievement-description">Secured 86.66% in the course</p>
+            </li>
+            <li class="achievement-item">
+                <span class="achievement-heading"><b>NPTEL Elite + silver</b></span>
+                <p class="achievement-description">Secured 81% in Joy of computing using Python</p>
+            </li>
+            <li class="achievement-item">
+                <span class="achievement-heading"><b>NPTEL Elite + silver</b></span>
+                <p class="achievement-description">Secured 82% in Enhancement of soft skill and personality development</p>
+            </li>
+            <li class="achievement-item">
+                <span class="achievement-heading"><b>4 ⭐ SQL</b></span>
+                <p class="achievement-description">HackerRank</p>
+            </li>
+            <li class="achievement-item">
+                <span class="achievement-heading"><b>3 ⭐ Java </b></span>
+                <p class="achievement-description">HackerRank</p>
+            </li>
+            <li class="achievement-item">
+                <span class="achievement-heading"><b>Silver Medalist (2nd Rank) </b></span>
+                <p class="achievement-description">Intra-School National Science Olympiad</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <div class="contact-container" id ="contactinfo">
+        <!-- Left Panel -->
+        <div class="left-panel" id="contactForm">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 9123029105</p>
+                <p><i class="fas fa-envelope"></i> nikitofficialworks@gmail.com</p>
+            </div>
+        
+            <div class="email-section">
+                <input type="email" placeholder="Enter your email" id="emailid">
+                <button onclick="showPopup()">Next</button>
+            </div>
+        
+            <div class="popup-form" id="popupForm">
+                <input type="text" placeholder="Your Name" id="name">
+                <textarea rows="4" placeholder="Your Message" id="msgContent"></textarea>
+                <button type="submit" >Submit</button>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <h2>Social Links</h2>
+            <div class="social-links">
+                <a href="#" onclick="redirectTo('https://www.linkedin.com/in/nikit-choudhary-ab1893218')">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="#" onclick="redirectTo('https://github.com/delta-nkt')">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" onclick="redirectTo('https://www.facebook.com/nikit.choudhary.731?mibextid=ZbWKwL')">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="#" onclick="redirectTo('https://www.instagram.com/the_floatingdelta/?igsh=MXQydDF4NHZyZDFoeQ%3D%3D#')">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./mail.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
